@@ -5,7 +5,7 @@
         <h1 class="text-4xl font-bold text-gray-400">{{$post->name}}</h1>
 
         <div class="text-lg text-gray-900 mb-2 ">
-            {!!$post->extract!!}
+            <div class="prose lg:prose-xl">{!! $post->extract !!}</div>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">

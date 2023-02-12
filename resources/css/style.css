@@ -3,7 +3,7 @@
   --header-height: 3.5rem;
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
-  --first-color: hsl(220.43,67.46%,59.02%);
+  --first-color: hsl(0, 0%, 42%);
   --second-color: hsl(257, 65%, 65%);
   --title-color: hsl(207, 4%, 16%);
   --text-color: hsl(207, 4%, 28%);
@@ -398,6 +398,59 @@ img {
   display: grid;
   justify-content: center;
 }
+
+/* flip project */
+
+.projects__card {
+  background-color: transparent;
+  width: 450px;
+  height: 226px;
+  margin-bottom: 1.5rem;
+}
+
+.projects__card-title {
+  font-size: 1.5em;
+  font-weight: 900;
+  text-align: center;
+
+}
+
+.projects__card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.projects__card:hover .projects__card-inner {
+  transform: rotateY(180deg);
+}
+
+.projects__card-front img{
+  border-radius: 1rem;
+}
+
+.projects__card-front, .projects__card-back {
+  box-shadow: 0 8px 14px 0 rgba(0,0,0,0.2);
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 1rem;
+}
+
+.projects__card-back {
+  background: linear-gradient(90deg, rgb(255, 255, 255), rgb(70, 70, 70) );
+  color: white;
+  transform: rotateY(180deg);
+}
+
 .projects__img {
   width: 400px;
   border-radius: 0.75rem;
@@ -427,48 +480,6 @@ img {
 }
 .projects__button:hover i {
   transform: translateX(0.25rem);
-}
-
-/* Swiper class */
-.projects__container .swiper-button-prev::after,
-.projects__container .swiper-button-next::after {
-  content: "";
-}
-
-.projects__container .swiper-button-prev,
-.projects__container .swiper-button-next {
-  width: initial;
-  height: initial;
-  margin: initial;
-  font-size: 2.5rem;
-  color: var(--title-color);
-}
-
-.projects__container .swiper-button-prev {
-  left: -1rem;
-  top: 4.5rem;
-}
-
-.projects__container .swiper-button-next {
-  right: -1rem;
-  top: 4.5rem;
-}
-
-.projects__container .swiper-slide {
-  margin-bottom: 4.5rem;
-}
-
-.projects__container .swiper-pagination-bullets {
-  bottom: 0;
-}
-
-.projects__container .swiper-pagination-bullet {
-  background-color: var(--text-color-light);
-  opacity: initial;
-}
-
-.projects__container .swiper-pagination-bullet-active {
-  background-color: var(--title-color);
 }
 
 /*=============== CONTACT ===============*/
@@ -889,3 +900,5 @@ img {
     transform: translateX(-6rem);
   }
 }/*# sourceMappingURL=style.css.map */
+
+

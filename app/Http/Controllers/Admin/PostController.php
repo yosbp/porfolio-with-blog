@@ -41,7 +41,9 @@ class PostController extends Controller
         $post = Post::create($request->all());
 
         if ($request->file()) {
-            $url = Storage::put('posts', $request->file('file'));
+
+            Storage::disk('public')->put('posts', $request->file('file'));
+            $url = Storage::disk('public')->put('posts', $request->file('file'));
 
             $post->image()->create([
                 'url' => $url
@@ -72,6 +74,9 @@ class PostController extends Controller
         $post->update($request->all());
 
         if ($request->file('file')) {
+            
+            Storage::disk('public')->put('posts', $request->file('file'));
+            
             $url = Storage::put('posts', $request->file('file'));
 
             if ($post->image) {
