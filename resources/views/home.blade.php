@@ -1,4 +1,4 @@
-<title>Yosmar B. Portfolio</title>
+<title>@lang('app.title')</title>
 
 <x-home-layout>
 
@@ -12,23 +12,27 @@
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list grid">
                     <li class="nav__item">
-                        <a href="#home" class="nav__link active-link"><i class="ri-home-5-line"></i>Inicio</a>
+                        <a href="#home" class="nav__link active-link"><i class="ri-home-5-line"></i>@lang('app.nav-home')</a>
                     </li>
 
                     <li class="nav__item">
-                        <a href="#skills" class="nav__link"><i class="ri-trophy-line"></i> Habilidades</a>
+                        <a href="#skills" class="nav__link"><i class="ri-trophy-line"></i>@lang('app.nav-skills')</a>
                     </li>
 
                     <li class="nav__item">
-                        <a href="#projects" class="nav__link"><i class="ri-image-line"></i> Proyectos</a>
+                        <a href="#projects" class="nav__link"><i class="ri-image-line"></i> @lang('app.nav-projects')</a>
                     </li>
 
                     <li class="nav__item">
-                        <a href="#contact" class="nav__link"><i class="ri-chat-3-line"></i> Contacto</a>
+                        <a href="#contact" class="nav__link"><i class="ri-chat-3-line"></i>@lang('app.nav-contact')</a>
                     </li>
 
                     <li class="nav__item">
-                        <a href="{{ route('posts.index') }}" class="nav__link"><i class="ri-chat-3-line"></i> Blog</a>
+                        <a href="{{ route('posts.index') }}" class="nav__link"><i class="ri-newspaper-line"></i> Blog</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="{{ route('home.'.Lang::get('app.lang')) }}" class="nav__link"><i class="ri-translate"></i>@lang('app.lang')</a>
                     </li>
                 </ul>
 
@@ -86,20 +90,20 @@
                     </div>
 
                     <div class="home__data">
-                        <h1 class="home__title">Hola, Soy Yosmar</h1>
-                        <h3 class="home__subtitle">FullStack developer</h3>
+                        <h1 class="home__title">@lang('app.name')</h1>
+                        <h3 class="home__subtitle">FullStack Developer</h3>
                         <p class="home__description">
                             Puedo gestionar su proyecto de la A a la Z, ocupándome de toda la implementación técnica y
                             parte del proceso creativo.
                         </p>
-                        <a href="#contact" class="button button--flex">Contáctame<i class="ri-send-plane-fill"></i></a>
+                        <a href="#contact" class="button button--flex">@lang('app.contact-title')<i class="ri-send-plane-fill"></i></a>
                     </div>
                 </div>
             </div>
         </section>
 
         <section class="skills section" id="skills">
-            <h2 class="section__title">Habilidades</h2>
+            <h2 class="section__title">@lang('app.nav-skills')</h2>
             <span class="section__subtitle"></span>
 
             <div class="skills__container container grid section__border">
@@ -116,7 +120,7 @@
                             </div>
 
                             <h3 class="skills__name">HTML</h3>
-                            <span class="skills__subtitle">Intermedio</span>
+                            <span class="skills__subtitle">@lang('app.skills-intermediate')</span>
                         </div>
 
                         <div class="skills__data">
@@ -125,7 +129,7 @@
                             </div>
 
                             <h3 class="skills__name">CSS</h3>
-                            <span class="skills__subtitle">Intermedio</span>
+                            <span class="skills__subtitle">@lang('app.skills-intermediate')</span>
                         </div>
 
                         <div class="skills__data">
@@ -134,7 +138,7 @@
                             </div>
 
                             <h3 class="skills__name">JavaScript</h3>
-                            <span class="skills__subtitle">Intermedio</span>
+                            <span class="skills__subtitle">@lang('app.skills-intermediate')</span>
                         </div>
 
                         <div class="skills__data">
@@ -143,7 +147,7 @@
                             </div>
 
                             <h3 class="skills__name">React</h3>
-                            <span class="skills__subtitle">Básico</span>
+                            <span class="skills__subtitle">@lang('app.skills-basic')</span>
                         </div>
 
                         <div class="skills__data">
@@ -152,7 +156,7 @@
                             </div>
 
                             <h3 class="skills__name">Git</h3>
-                            <span class="skills__subtitle">Intermedio</span>
+                            <span class="skills__subtitle">@lang('app.skills-intermediate')</span>
                         </div>
                         <div class="skills__data">
                             <div class="skills__blob">
@@ -160,7 +164,7 @@
                             </div>
 
                             <h3 class="skills__name">Bootstrap</h3>
-                            <span class="skills__subtitle">Intermedio</span>
+                            <span class="skills__subtitle">@lang('app.skills-intermediate')</span>
                         </div>
                     </div>
                 </div>
@@ -178,7 +182,7 @@
                             </div>
 
                             <h3 class="skills__name">PHP</h3>
-                            <span class="skills__subtitle">Intermedio</span>
+                            <span class="skills__subtitle">@lang('app.skills-intermediate')</span>
                         </div>
 
                         <div class="skills__data">
@@ -187,7 +191,7 @@
                             </div>
 
                             <h3 class="skills__name">MySQL</h3>
-                            <span class="skills__subtitle">Intermedio</span>
+                            <span class="skills__subtitle">@lang('app.skills-intermediate')</span>
                         </div>
 
                         <div class="skills__data">
@@ -196,7 +200,7 @@
                             </div>
 
                             <h3 class="skills__name">Api Rest</h3>
-                            <span class="skills__subtitle">Intermedio</span>
+                            <span class="skills__subtitle">@lang('app.skills-intermediate')</span>
                         </div>
 
                         <div class="skills__data">
@@ -205,7 +209,7 @@
                             </div>
 
                             <h3 class="skills__name">Laravel</h3>
-                            <span class="skills__subtitle">Intermedio</span>
+                            <span class="skills__subtitle">@lang('app.skills-intermediate')</span>
                         </div>
 
                     </div>
@@ -217,8 +221,8 @@
 
     <!--==================== PROYECTOS ====================-->
     <section class="projects section" id="projects">
-        <h2 class="section__title">Proyectos</h2>
-        <span class="section__subtitle">Trabajos más recientes</span>
+        <h2 class="section__title">@lang('app.nav-projects')</h2>
+        <span class="section__subtitle">@lang('app.projects-recent')</span>
 
         <div class="container section__border">
             <div class="projects__container swiper">
@@ -231,7 +235,7 @@
                                     <img src="{{ Storage::url('img/proyecto1.JPG') }}" class="">
                                 </div>
                                 <div class="projects__card-back">
-                                    <p class="projects__card-title">Tecnologías usadas:</p>
+                                    <p class="projects__card-title">@lang('app.projects-techs')</p>
                                     <p>PHP Vanilla</p>
                                     <p>HTML</p>
                                     <p>CSS</p>
@@ -241,9 +245,9 @@
                         </div>
                         <div>
                             <span class="projects__subtitle">Web</span>
-                            <h1 class="projects__title">Página Inmobiliaria</h1>
+                            <h1 class="projects__title">@lang('app.projects-realstate')</h1>
                             <a href="https://inmobiliaria.yosmarb.com/" class="projects__button">
-                                Ir al sitio <i class="ri-arrow-right-line"></i>
+                                @lang('app.projects-site') <i class="ri-arrow-right-line"></i>
                             </a>
                         </div>
                     </div>
@@ -253,19 +257,19 @@
 
     <!--==================== CONTACTO ====================-->
     <section class="contact section" id="contact">
-        <h2 class="section__title">Contáctame</h2>
+        <h2 class="section__title">@lang('app.contact-title')</h2>
         <span class="section__subtitle"></span>
 
         <div class="contact__container container grid section__border">
             <div class="contact__content">
                 <h3 class="contact__title">
-                    <i class="ri-chat-3-line"></i> Mantente en contacto
+                    <i class="ri-chat-3-line"></i> @lang('app.contact-touch')
                 </h3>
 
                 <div class="contact__info">
                     <div class="contact__data">
-                        <span class="contact__data-title">Correo</span>
-                        <span class="contact__data-info">imyosbp@gmail.com</span>
+                        <span class="contact__data-title">@lang('app.contact-mail')</span>
+                        <span class="contact__data-info"><a href="mailto:hola@yosmarb.com">hola@yosmarb.com</a> </span>
                     </div>
 
                     <div class="contact__data">
@@ -273,7 +277,7 @@
                         <span class="contact__data-info">+58 42417266</span>
                         <a href="https://api.whatsapp.com/send?phone=584241417266&text=Hola!, necesito más información"
                             target="_blank" class="contact__button">
-                            Escribeme <i class="ri-whatsapp-line"></i>
+                            @lang('app.contact-text') <i class="ri-whatsapp-line"></i>
                         </a>
                     </div>
                 </div>
@@ -281,31 +285,31 @@
 
             <div class="contact__content">
                 <h3 class="contact__title">
-                    <i class="ri-send-plane-line"></i> Escribeme lo que necesites
+                    <i class="ri-send-plane-line"></i> @lang('app.contact-need')
                 </h3>
 
                 <form action="" class="contact__form" id="contact-form">
                     <div class="contact__form-div">
-                        <label class="contact__form-tag">Nombre</label>
-                        <input type="text" name="user_name" required placeholder="Ingresa tu nombre"
+                        <label class="contact__form-tag">@lang('app.contact-name')</label>
+                        <input type="text" name="user_name" required placeholder="{{Lang::get('app.contact-form-name')}}"
                             class="contact__form-input" id="contact-name">
                     </div>
 
                     <div class="contact__form-div">
-                        <label class="contact__form-tag">Correo</label>
-                        <input type="email" name="user_email" required placeholder="Ingresa tu correo"
+                        <label class="contact__form-tag">@lang('app.contact-mail')</label>
+                        <input type="email" name="user_email" required placeholder="{{Lang::get('app.contact-form-mail')}}"
                             class="contact__form-input" id="contact-email">
                     </div>
 
                     <div class="contact__form-div contact__form-area">
-                        <label class="contact__form-tag">Proyecto</label>
-                        <textarea name="user_project" placeholder="Hablame acerca de tu proyecto" class="contact__form-input"
+                        <label class="contact__form-tag">@lang('app.contact-project')</label>
+                        <textarea name="user_project" placeholder="{{Lang::get('app.contact-form-project')}}" class="contact__form-input"
                             id="contact-project"></textarea>
                     </div>
 
                     <p class="contact__message" id="contact-message"></p>
 
-                    <button type="submit" class="contact__button"> Enviar <i class="ri-arrow-right-up-line"></i>
+                    <button type="submit" class="contact__button"> @lang('app.contact-send') <i class="ri-arrow-right-up-line"></i>
                     </button>
                 </form>
             </div>
@@ -320,13 +324,13 @@
 
             <ul class="footer__list">
                 <li>
-                    <a href="#home" class="footer__link">Home</a>
+                    <a href="#home" class="footer__link">@lang('app.nav-home')</a>
                 </li>
                 <li>
-                    <a href="#skills" class="footer__link">Habilidades</a>
+                    <a href="#skills" class="footer__link">@lang('app.nav-skills')</a>
                 </li>
                 <li>
-                    <a href="#projects" class="footer__link">Proyectos</a>
+                    <a href="#projects" class="footer__link">@lang('app.nav-projects')</a>
                 </li>
             </ul>
 

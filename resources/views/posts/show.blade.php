@@ -19,7 +19,7 @@
                 </figure>
 
                 <div class="text-base text-gray-500 mt-4">
-                    {!!$post->body!!}
+                    <div class="prose "> {!!$post->body!!}</div>
                 </div>
 
             </div>

@@ -442,6 +442,7 @@ img {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   border-radius: 1rem;
+  user-select: none;
 }
 
 .projects__card-back {
