@@ -2,6 +2,8 @@
 
 return [
     'lang' => 'en',
+    'description' => 'Me especializo en crear soluciones a medida para mis clientes. Siempre estoy buscando nuevos retos y formas de mejorar mis habilidades a través de un aprendizaje constante.',
+    'cv' => 'es',
     'title' => 'Yosmar B. Portafolio',
     'name' => 'Hola, Soy Yosmar',
     'nav-home' => 'Inicio',

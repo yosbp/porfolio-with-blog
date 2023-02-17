@@ -62,7 +62,7 @@
                         <a href="https://github.com/yosbp" target="_blank" class="home__social-icon"><i
                                 class="ri-github-fill"></i></a>
 
-                        <a href="#CV" class="home__social-icon"><i class="ri-profile-line"></i></a>
+                        <a href="{{ Storage::url('CV-Yosmar-Barco-'.Lang::get('app.cv').'.pdf') }}" target="_blank" class="home__social-icon"><i class="ri-file-download-line"></i></a>
                     </div>
 
 
@@ -93,8 +93,7 @@
                         <h1 class="home__title">@lang('app.name')</h1>
                         <h3 class="home__subtitle">FullStack Developer</h3>
                         <p class="home__description">
-                            Puedo gestionar su proyecto de la A a la Z, ocupándome de toda la implementación técnica y
-                            parte del proceso creativo.
+                            @lang('app.description')
                         </p>
                         <a href="#contact" class="button button--flex">@lang('app.contact-title')<i class="ri-send-plane-fill"></i></a>
                     </div>

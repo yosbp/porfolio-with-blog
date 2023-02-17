@@ -17,6 +17,12 @@ module.exports = {
         },
     },
 
+    safelist: [
+        {
+          pattern: /bg-(red|indigo|blue|pink|purple|green)-(400|500|600|700)/,
+        },
+      ],
+
     plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography')],
 
     corePlugins: {

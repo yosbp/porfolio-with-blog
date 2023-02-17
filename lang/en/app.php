@@ -2,6 +2,8 @@
 
 return [
     'lang' => 'es',
+    'description'=> 'I specialize in creating tailored solutions for my clients. Im always seeking new challenges and ways to enhance my skills through ongoing learning. My focus is on delivering personalized solutions that fit your unique needs.',
+    'cv' => 'en',
     'title'=> 'Yosmar B. Portfolio',
     'name' => 'Hi, I am Yosmar',
     'nav-home' => 'Home',
