@@ -14,6 +14,8 @@ return [
     'skills-intermediate' => 'Intermedio',
     'projects-recent' => 'Trabajo más recientes',
     'projects-realstate' => 'Página Inmobiliaria',
+    'projects-surveys' => 'Proyecto Encuestas',
+    'projects-admin' => 'Panel Administrativo',
     'projects-techs' => 'Tecnologías usadas:',
     'projects-site'=> 'Ir al sitio',
     'contact-title' => 'Contáctame',

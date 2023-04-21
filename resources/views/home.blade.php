@@ -12,7 +12,8 @@
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list grid">
                     <li class="nav__item">
-                        <a href="#home" class="nav__link active-link"><i class="ri-home-5-line"></i>@lang('app.nav-home')</a>
+                        <a href="#home" class="nav__link active-link"><i
+                                class="ri-home-5-line"></i>@lang('app.nav-home')</a>
                     </li>
 
                     <li class="nav__item">
@@ -28,11 +29,13 @@
                     </li>
 
                     <li class="nav__item">
-                        <a href="{{ route('posts.index') }}" class="nav__link"><i class="ri-newspaper-line"></i> Blog</a>
+                        <a href="{{ route('posts.index') }}" class="nav__link"><i class="ri-newspaper-line"></i>
+                            Blog</a>
                     </li>
 
                     <li class="nav__item">
-                        <a href="{{ route('home.'.Lang::get('app.lang')) }}" class="nav__link"><i class="ri-translate"></i>@lang('app.lang')</a>
+                        <a href="{{ route('home.' . Lang::get('app.lang')) }}" class="nav__link"><i
+                                class="ri-translate"></i>@lang('app.lang')</a>
                     </li>
                 </ul>
 
@@ -62,7 +65,8 @@
                         <a href="https://github.com/yosbp" target="_blank" class="home__social-icon"><i
                                 class="ri-github-fill"></i></a>
 
-                        <a href="{{ Storage::url('CV-Yosmar-Barco-'.Lang::get('app.cv').'.pdf') }}" target="_blank" class="home__social-icon"><i class="ri-file-download-line"></i></a>
+                        <a href="{{ Storage::url('CV-Yosmar-Barco-' . Lang::get('app.cv') . '.pdf') }}" target="_blank"
+                            class="home__social-icon"><i class="ri-file-download-line"></i></a>
                     </div>
 
 
@@ -95,7 +99,8 @@
                         <p class="home__description">
                             @lang('app.description')
                         </p>
-                        <a href="#contact" class="button button--flex">@lang('app.contact-title')<i class="ri-send-plane-fill"></i></a>
+                        <a href="#contact" class="button button--flex">@lang('app.contact-title')<i
+                                class="ri-send-plane-fill"></i></a>
                     </div>
                 </div>
             </div>
@@ -142,11 +147,11 @@
 
                         <div class="skills__data">
                             <div class="skills__blob">
-                                <img src="{{ Storage::url('img/react-2.svg') }}">
+                                <img src="{{ Storage::url('img/vue.svg') }}">
                             </div>
 
-                            <h3 class="skills__name">React</h3>
-                            <span class="skills__subtitle">@lang('app.skills-basic')</span>
+                            <h3 class="skills__name">Vue</h3>
+                            <span class="skills__subtitle">@lang('app.skills-intermediate')</span>
                         </div>
 
                         <div class="skills__data">
@@ -159,10 +164,10 @@
                         </div>
                         <div class="skills__data">
                             <div class="skills__blob">
-                                <img src="{{ Storage::url('img/bootstrap.svg') }}">
+                                <img src="{{ Storage::url('img/tailwind.svg') }}">
                             </div>
 
-                            <h3 class="skills__name">Bootstrap</h3>
+                            <h3 class="skills__name">UI Frams</h3>
                             <span class="skills__subtitle">@lang('app.skills-intermediate')</span>
                         </div>
                     </div>
@@ -219,38 +224,89 @@
     </main>
 
     <!--==================== PROYECTOS ====================-->
+
     <section class="projects section" id="projects">
         <h2 class="section__title">@lang('app.nav-projects')</h2>
         <span class="section__subtitle">@lang('app.projects-recent')</span>
 
         <div class="container section__border">
-            <div class="projects__container swiper">
-                <div class="swiper-wrapper">
-                    <!--==================== PROYECTO 1 ====================-->
-                    <div class="projects__content swiper-slide">
-                        <div class="projects__card">
-                            <div class="projects__card-inner">
-                                <div class="projects__card-front">
-                                    <img src="{{ Storage::url('img/proyecto1.JPG') }}" class="">
-                                </div>
-                                <div class="projects__card-back">
-                                    <p class="projects__card-title">@lang('app.projects-techs')</p>
-                                    <p>PHP Vanilla</p>
-                                    <p>HTML</p>
-                                    <p>CSS</p>
-                                    <p>JavaScript</p>
-                                </div>
+            <div class="projects__container carousel" data-flickity>
+
+                <!--==================== PROYECTO 1 ====================-->
+                <div class="projects__content carousel-cell">
+                    <div class="projects__card">
+                        <div class="projects__card-inner">
+                            <div class="projects__card-front">
+                                <img src="{{ Storage::url('img/proyecto1.JPG') }}" class="">
+                            </div>
+                            <div class="projects__card-back">
+                                <p class="projects__card-title">@lang('app.projects-techs')</p>
+                                <p>PHP Vanilla</p>
+                                <p>HTML</p>
+                                <p>CSS</p>
+                                <p>JavaScript</p>
                             </div>
                         </div>
-                        <div>
-                            <span class="projects__subtitle">Web</span>
-                            <h1 class="projects__title">@lang('app.projects-realstate')</h1>
-                            <a href="https://inmobiliaria.yosmarb.com/" class="projects__button">
-                                @lang('app.projects-site') <i class="ri-arrow-right-line"></i>
-                            </a>
-                        </div>
+                    </div>
+                    <div>
+                        <span class="projects__subtitle">Web</span>
+                        <h1 class="projects__title">@lang('app.projects-realstate')</h1>
+                        <a href="https://inmobiliaria.yosmarb.com/" class="projects__button" target="_blank">
+                            @lang('app.projects-site') <i class="ri-arrow-right-line"></i>
+                        </a>
                     </div>
                 </div>
+
+                <!--==================== PROYECTO 2 ====================-->
+                <div class="projects__content carousel-cell">
+                    <div class="projects__card">
+                        <div class="projects__card-inner">
+                            <div class="projects__card-front">
+                                <img src="{{ Storage::url('img/proyecto1.JPG') }}" class="">
+                            </div>
+                            <div class="projects__card-back">
+                                <p class="projects__card-title">@lang('app.projects-techs')</p>
+                                <p>Api - Laravel</p>
+                                <p>Vue3</p>
+                                <p>Tailwind</p>
+                                <p>JavaScript</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="projects__subtitle">Web</span>
+                        <h1 class="projects__title">@lang('app.projects-surveys')</h1>
+                        <a href="https://yosbpworks.tech/" class="projects__button" target="_blank">
+                            @lang('app.projects-site') <i class="ri-arrow-right-line"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!--==================== PROYECTO 3 ====================-->
+                <div class="projects__content carousel-cell">
+                    <div class="projects__card">
+                        <div class="projects__card-inner">
+                            <div class="projects__card-front">
+                                <img src="{{ Storage::url('img/proyecto3.JPG') }}" class="">
+                            </div>
+                            <div class="projects__card-back">
+                                <p class="projects__card-title">@lang('app.projects-techs')</p>
+                                <p>Vue3</p>
+                                <p>Ant Design</p>
+                                <p>Sass</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="projects__subtitle">Web</span>
+                        <h1 class="projects__title">@lang('app.projects-admin')</h1>
+                        <a href="https://dashboard.yosmarb.com/" class="projects__button" target="_blank">
+                            @lang('app.projects-site') <i class="ri-arrow-right-line"></i>
+                        </a>
+                    </div>
+                </div>
+
+
             </div>
     </section>
 
@@ -268,7 +324,8 @@
                 <div class="contact__info">
                     <div class="contact__data">
                         <span class="contact__data-title">@lang('app.contact-mail')</span>
-                        <span class="contact__data-info"><a href="mailto:hola@yosmarb.com">hola@yosmarb.com</a> </span>
+                        <span class="contact__data-info"><a href="mailto:hola@yosmarb.com">hola@yosmarb.com</a>
+                        </span>
                     </div>
 
                     <div class="contact__data">
@@ -290,25 +347,28 @@
                 <form action="" class="contact__form" id="contact-form">
                     <div class="contact__form-div">
                         <label class="contact__form-tag">@lang('app.contact-name')</label>
-                        <input type="text" name="user_name" required placeholder="{{Lang::get('app.contact-form-name')}}"
-                            class="contact__form-input" id="contact-name">
+                        <input type="text" name="user_name" required
+                            placeholder="{{ Lang::get('app.contact-form-name') }}" class="contact__form-input"
+                            id="contact-name">
                     </div>
 
                     <div class="contact__form-div">
                         <label class="contact__form-tag">@lang('app.contact-mail')</label>
-                        <input type="email" name="user_email" required placeholder="{{Lang::get('app.contact-form-mail')}}"
-                            class="contact__form-input" id="contact-email">
+                        <input type="email" name="user_email" required
+                            placeholder="{{ Lang::get('app.contact-form-mail') }}" class="contact__form-input"
+                            id="contact-email">
                     </div>
 
                     <div class="contact__form-div contact__form-area">
                         <label class="contact__form-tag">@lang('app.contact-project')</label>
-                        <textarea name="user_project" placeholder="{{Lang::get('app.contact-form-project')}}" class="contact__form-input"
+                        <textarea name="user_project" placeholder="{{ Lang::get('app.contact-form-project') }}" class="contact__form-input"
                             id="contact-project"></textarea>
                     </div>
 
                     <p class="contact__message" id="contact-message"></p>
 
-                    <button type="submit" class="contact__button"> @lang('app.contact-send') <i class="ri-arrow-right-up-line"></i>
+                    <button type="submit" class="contact__button"> @lang('app.contact-send') <i
+                            class="ri-arrow-right-up-line"></i>
                     </button>
                 </form>
             </div>

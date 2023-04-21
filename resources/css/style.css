@@ -393,6 +393,7 @@ img {
 /*=============== PROJECTS ===============*/
 .projects__container {
   overflow: initial;
+  height: 300px;
 }
 .projects__content {
   display: grid;
@@ -711,10 +712,8 @@ img {
     justify-content: center;
   }
   .projects__container {
-    width: 500px;
-  }
-  .projects__container {
-    overflow: hidden;
+    width: 100%;
+    height: 400px;
   }
 
   .projects__card {
@@ -725,12 +724,6 @@ img {
     font-size: 1rem;
   }
 
-  .projects__container .swiper-button-prev {
-    left: 1rem;
-  }
-  .projects__container .swiper-button-next {
-    right: 1rem;
-  }
 }
 @media screen and (min-width: 767px) {
   .home__blob {
@@ -762,7 +755,7 @@ img {
          column-gap: 5rem;
   }
   .projects__container {
-    width: 500px;
+    width: 100%;
   }
   .contact__container {
     grid-template-columns: repeat(2, -webkit-max-content);
@@ -843,18 +836,7 @@ img {
   .projects__container {
     width: 900px;
   }
-  .projects__container .swiper-button-prev, .projects__container .swiper-button-next {
-    font-size: 3rem;
-  }
-  .projects__container .swiper-button-prev {
-    left: -1rem;
-  }
-  .projects__container .swiper-button-next {
-    right: -1rem;
-  }
-  .projects__container .swiper-slide {
-    margin-bottom: 6.5rem;
-  }
+
   .projects__img {
     width: 450px;
     margin-bottom: 2rem;
@@ -917,3 +899,6 @@ img {
 }/*# sourceMappingURL=style.css.map */
 
 
+.carousel-cell {
+  width: 100%;
+}
