@@ -1,6 +1,11 @@
 {
+  "resources/css/flickity.css": {
+    "file": "assets/flickity-c4f9fc83.css",
+    "src": "resources/css/flickity.css",
+    "isEntry": true
+  },
   "resources/css/style.css": {
-    "file": "assets/style-75077272.css",
+    "file": "assets/style-c23b8ee2.css",
     "src": "resources/css/style.css",
     "isEntry": true
   },
@@ -12,6 +17,11 @@
   "resources/js/main.js": {
     "file": "assets/main-0f09db1f.js",
     "src": "resources/js/main.js",
+    "isEntry": true
+  },
+  "resources/js/flickity.min.js": {
+    "file": "assets/flickity.min-71a47a18.js",
+    "src": "resources/js/flickity.min.js",
     "isEntry": true
   },
   "resources/js/app.js": {

@@ -10,6 +10,8 @@ export default defineConfig({
                 'resources/js/app.js',
                 'resources/css/style.css',
                 'resources/js/main.js',
+                'resources/css/flickity.css',
+                'resources/js/flickity.min.js',
 
             ],
             refresh: [
