@@ -19,12 +19,9 @@
         <!-- Fonts -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap">
         <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
-        <!-- CSS -->
-        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-
 
         <!-- Scripts -->
-        @vite(['resources/css/style.css', 'resources/js/main.js'])
+        @vite(['resources/css/flickity.css', 'resources/css/style.css', 'resources/js/main.js', 'resources/js/flickity.min.js'])
     </head>
     <body>
         <div >
@@ -33,7 +30,6 @@
 
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
         <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
-        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
     </body>
 </html>

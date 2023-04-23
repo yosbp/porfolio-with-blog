@@ -398,9 +398,10 @@ img {
 .projects__content {
   display: grid;
   justify-content: center;
+  overflow: visible;
 }
 
-/* flip project */
+/* flip card projects */
 
 .projects__card {
   background-color: transparent;
@@ -458,8 +459,7 @@ img {
 }
 .projects__title {
   font-size: var(--h2-font-size);
-  margin-bottom: 1.25rem;
-  margin: 0.5rem 0 1.25rem;
+  margin: 0.5rem 0 ;
 }
 .projects__button {
   display: inline-flex;
