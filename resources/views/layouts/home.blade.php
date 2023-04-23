@@ -21,7 +21,7 @@
         <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
 
         <!-- Scripts -->
-        @vite(['resources/css/flickity.css', 'resources/css/style.css', 'resources/js/main.js', 'resources/js/flickity.min.js'])
+        @vite(['resources/css/flickity.css', 'resources/css/style.css', 'resources/js/main.js'])
     </head>
     <body>
         <div >
@@ -30,6 +30,7 @@
 
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
         <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
     </body>
 </html>
