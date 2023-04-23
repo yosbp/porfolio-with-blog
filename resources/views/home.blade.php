@@ -262,7 +262,7 @@
                     <div class="projects__card">
                         <div class="projects__card-inner">
                             <div class="projects__card-front">
-                                <img src="{{ Storage::url('img/proyecto1.JPG') }}" class="">
+                                <img src="{{ Storage::url('img/proyecto2.JPG') }}" class="">
                             </div>
                             <div class="projects__card-back">
                                 <p class="projects__card-title">@lang('app.projects-techs')</p>
