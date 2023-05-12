@@ -6,14 +6,12 @@
 
         <!--==================== NAV ====================-->
         <nav class="nav container">
-            <a href="#" class="nav__logo"><img src="{{ Storage::url('img/logo.png') }}" alt=""
-                    srcset=""></a>
+            <a href="#" class="nav__logo"><img src="{{ Storage::url('img/logo.png') }}" alt="" srcset=""></a>
 
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list grid">
                     <li class="nav__item">
-                        <a href="#home" class="nav__link active-link"><i
-                                class="ri-home-5-line"></i>@lang('app.nav-home')</a>
+                        <a href="#home" class="nav__link active-link"><i class="ri-home-5-line"></i>@lang('app.nav-home')</a>
                     </li>
 
                     <li class="nav__item">
@@ -34,8 +32,7 @@
                     </li>
 
                     <li class="nav__item">
-                        <a href="{{ route('home.' . Lang::get('app.lang')) }}" class="nav__link"><i
-                                class="ri-translate"></i>@lang('app.lang')</a>
+                        <a href="{{ route('home.' . Lang::get('app.lang')) }}" class="nav__link"><i class="ri-translate"></i>@lang('app.lang')</a>
                     </li>
                 </ul>
 
@@ -59,35 +56,29 @@
             <div class="home__container container grid section__border">
                 <div class="home__content grid">
                     <div class="home__social">
-                        <a href="https://linkedin.com/in/yosbp" target="_blank" class="home__social-icon"><i
-                                class="ri-linkedin-fill"></i></a>
+                        <a href="https://linkedin.com/in/yosbp" target="_blank" class="home__social-icon"><i class="ri-linkedin-fill"></i></a>
 
-                        <a href="https://github.com/yosbp" target="_blank" class="home__social-icon"><i
-                                class="ri-github-fill"></i></a>
+                        <a href="https://github.com/yosbp" target="_blank" class="home__social-icon"><i class="ri-github-fill"></i></a>
 
-                        <a href="{{ Storage::url('CV-Yosmar-Barco-' . Lang::get('app.cv') . '.pdf') }}" target="_blank"
-                            class="home__social-icon"><i class="ri-file-download-line"></i></a>
+                        <a href="{{ Storage::url('CV-Yosmar-Barco-' . Lang::get('app.cv') . '.pdf') }}" target="_blank" class="home__social-icon"><i class="ri-file-download-line"></i></a>
                     </div>
 
 
                     <div class="home__img">
                         <svg class="home__blob" viewBox="0 0 200 187">
                             <mask id="mask0" mask-type="alpha">
-                                <path
-                                    d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
                                   130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
                                   97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
                                   0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
                             </mask>
                             <g mask="url(#mask0)">
-                                <path
-                                    d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                                <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
                                   165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
                                   129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
                                   -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z" />
 
-                                <image class="home__blob-img" x="12" y="18"
-                                    href="{{ Storage::url('img\profile.png') }}" />
+                                <image class="home__blob-img" x="12" y="18" href="{{ Storage::url('img\profile.png') }}" />
 
                             </g>
                         </svg>
@@ -99,8 +90,7 @@
                         <p class="home__description">
                             @lang('app.description')
                         </p>
-                        <a href="#contact" class="button button--flex">@lang('app.contact-title')<i
-                                class="ri-send-plane-fill"></i></a>
+                        <a href="#contact" class="button button--flex">@lang('app.contact-title')<i class="ri-send-plane-fill"></i></a>
                     </div>
                 </div>
             </div>
@@ -232,6 +222,31 @@
         <div class="container section__border">
             <div class="projects__container carousel" data-flickity>
 
+                <!--==================== PROYECTO 3 ====================-->
+                <div class="projects__content carousel-cell">
+                    <div class="projects__card">
+                        <div class="projects__card-inner">
+                            <div class="projects__card-front">
+                                <img src="{{ Storage::url('img/proyecto3.JPG') }}" class="">
+                            </div>
+                            <div class="projects__card-back">
+                                <p class="projects__card-title">@lang('app.projects-techs')</p>
+                                <p>Vue 3</p>
+                                <p>Laravel 10</p>
+                                <p>Ant Design</p>
+                                <p>Tailwind CSS</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="projects__subtitle">Web</span>
+                        <h1 class="projects__title">@lang('app.projects-api')</h1>
+                        <a href="https://iaphrases.live/" class="projects__button" target="_blank">
+                            @lang('app.projects-site') <i class="ri-arrow-right-line"></i>
+                        </a>
+                    </div>
+                </div>
+
                 <!--==================== PROYECTO 1 ====================-->
                 <div class="projects__content carousel-cell">
                     <div class="projects__card">
@@ -282,31 +297,6 @@
                     </div>
                 </div>
 
-                <!--==================== PROYECTO 3 ====================-->
-                <div class="projects__content carousel-cell">
-                    <div class="projects__card">
-                        <div class="projects__card-inner">
-                            <div class="projects__card-front">
-                                <img src="{{ Storage::url('img/proyecto3.JPG') }}" class="">
-                            </div>
-                            <div class="projects__card-back">
-                                <p class="projects__card-title">@lang('app.projects-techs')</p>
-                                <p>Vue3</p>
-                                <p>Ant Design</p>
-                                <p>Sass</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <span class="projects__subtitle">Web</span>
-                        <h1 class="projects__title">@lang('app.projects-admin')</h1>
-                        <a href="https://dashboard.yosmarb.com/" class="projects__button" target="_blank">
-                            @lang('app.projects-site') <i class="ri-arrow-right-line"></i>
-                        </a>
-                    </div>
-                </div>
-
-
             </div>
     </section>
 
@@ -331,8 +321,7 @@
                     <div class="contact__data">
                         <span class="contact__data-title">Whatsapp</span>
                         <span class="contact__data-info">+58 42417266</span>
-                        <a href="https://api.whatsapp.com/send?phone=584241417266&text=Hola!, necesito más información"
-                            target="_blank" class="contact__button">
+                        <a href="https://api.whatsapp.com/send?phone=584241417266&text=Hola!, necesito más información" target="_blank" class="contact__button">
                             @lang('app.contact-text') <i class="ri-whatsapp-line"></i>
                         </a>
                     </div>
@@ -347,28 +336,22 @@
                 <form action="" class="contact__form" id="contact-form">
                     <div class="contact__form-div">
                         <label class="contact__form-tag">@lang('app.contact-name')</label>
-                        <input type="text" name="user_name" required
-                            placeholder="{{ Lang::get('app.contact-form-name') }}" class="contact__form-input"
-                            id="contact-name">
+                        <input type="text" name="user_name" required placeholder="{{ Lang::get('app.contact-form-name') }}" class="contact__form-input" id="contact-name">
                     </div>
 
                     <div class="contact__form-div">
                         <label class="contact__form-tag">@lang('app.contact-mail')</label>
-                        <input type="email" name="user_email" required
-                            placeholder="{{ Lang::get('app.contact-form-mail') }}" class="contact__form-input"
-                            id="contact-email">
+                        <input type="email" name="user_email" required placeholder="{{ Lang::get('app.contact-form-mail') }}" class="contact__form-input" id="contact-email">
                     </div>
 
                     <div class="contact__form-div contact__form-area">
                         <label class="contact__form-tag">@lang('app.contact-project')</label>
-                        <textarea name="user_project" placeholder="{{ Lang::get('app.contact-form-project') }}" class="contact__form-input"
-                            id="contact-project"></textarea>
+                        <textarea name="user_project" placeholder="{{ Lang::get('app.contact-form-project') }}" class="contact__form-input" id="contact-project"></textarea>
                     </div>
 
                     <p class="contact__message" id="contact-message"></p>
 
-                    <button type="submit" class="contact__button"> @lang('app.contact-send') <i
-                            class="ri-arrow-right-up-line"></i>
+                    <button type="submit" class="contact__button"> @lang('app.contact-send') <i class="ri-arrow-right-up-line"></i>
                     </button>
                 </form>
             </div>

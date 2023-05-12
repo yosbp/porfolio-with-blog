@@ -15,7 +15,7 @@ return [
     'projects-recent' => 'Recent projects',
     'projects-realstate' => 'Real Estate Website',
     'projects-surveys' => 'Survey Project Website',
-    'projects-admin' => 'Administrative Panel',
+    'projects-api' => 'Phrases API',
     'projects-techs' => 'Languages used:',
     'projects-site' => 'Go to site',
     'contact-title' => 'Contact me',
