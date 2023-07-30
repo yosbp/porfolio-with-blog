@@ -277,21 +277,21 @@
                     <div class="projects__card">
                         <div class="projects__card-inner">
                             <div class="projects__card-front">
-                                <img src="{{ Storage::url('img/proyecto2.JPG') }}" class="">
+                                <img src="{{ Storage::url('img/proyecto4.JPG') }}" class="">
                             </div>
                             <div class="projects__card-back">
                                 <p class="projects__card-title">@lang('app.projects-techs')</p>
                                 <p>Api - Laravel</p>
                                 <p>Vue3</p>
                                 <p>Tailwind</p>
-                                <p>JavaScript</p>
+                                <p>Ant-Design</p>
                             </div>
                         </div>
                     </div>
                     <div>
                         <span class="projects__subtitle">Web</span>
-                        <h1 class="projects__title">@lang('app.projects-surveys')</h1>
-                        <a href="https://yosbpworks.tech/" class="projects__button" target="_blank">
+                        <h1 class="projects__title">Delipedidos (SAAS)</h1>
+                        <a href="https://delipedidos.com/" class="projects__button" target="_blank">
                             @lang('app.projects-site') <i class="ri-arrow-right-line"></i>
                         </a>
                     </div>
