@@ -26,10 +26,11 @@
                         <a href="#contact" class="nav__link"><i class="ri-chat-3-line"></i>@lang('app.nav-contact')</a>
                     </li>
 
-                    <li class="nav__item">
+                    <!-- Blog -->
+<!--                     <li class="nav__item">
                         <a href="{{ route('posts.index') }}" class="nav__link"><i class="ri-newspaper-line"></i>
                             Blog</a>
-                    </li>
+                    </li> -->
 
                     <li class="nav__item">
                         <a href="{{ route('home.' . Lang::get('app.lang')) }}" class="nav__link"><i class="ri-translate"></i>@lang('app.lang')</a>
@@ -222,7 +223,33 @@
         <div class="container section__border">
             <div class="projects__container carousel" data-flickity>
 
-                <!--==================== PROYECTO 3 ====================-->
+                <!--==================== PROYECTO 1 ====================-->
+                <div class="projects__content carousel-cell">
+                    <div class="projects__card">
+                        <div class="projects__card-inner">
+                            <div class="projects__card-front">
+                                <img src="{{ Storage::url('img/proyecto4.JPG') }}" class="">
+                            </div>
+                            <div class="projects__card-back">
+                                <p class="projects__card-title">@lang('app.projects-techs')</p>
+                                <p>Api - Laravel</p>
+                                <p>Vue3</p>
+                                <p>Tailwind CSS</p>
+                                <p>Ant-Design</p>
+                                <p>AWS</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="projects__subtitle">Web</span>
+                        <h1 class="projects__title">Delipedidos (SAAS)</h1>
+                        <a href="https://delipedidos.com/" class="projects__button" target="_blank">
+                            @lang('app.projects-site') <i class="ri-arrow-right-line"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!--==================== PROYECTO 2 ====================-->
                 <div class="projects__content carousel-cell">
                     <div class="projects__card">
                         <div class="projects__card-inner">
@@ -247,7 +274,7 @@
                     </div>
                 </div>
 
-                <!--==================== PROYECTO 1 ====================-->
+                <!--==================== PROYECTO 3 ====================-->
                 <div class="projects__content carousel-cell">
                     <div class="projects__card">
                         <div class="projects__card-inner">
@@ -267,31 +294,6 @@
                         <span class="projects__subtitle">Web</span>
                         <h1 class="projects__title">@lang('app.projects-realstate')</h1>
                         <a href="https://inmobiliaria.yosmarb.com/" class="projects__button" target="_blank">
-                            @lang('app.projects-site') <i class="ri-arrow-right-line"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!--==================== PROYECTO 2 ====================-->
-                <div class="projects__content carousel-cell">
-                    <div class="projects__card">
-                        <div class="projects__card-inner">
-                            <div class="projects__card-front">
-                                <img src="{{ Storage::url('img/proyecto4.JPG') }}" class="">
-                            </div>
-                            <div class="projects__card-back">
-                                <p class="projects__card-title">@lang('app.projects-techs')</p>
-                                <p>Api - Laravel</p>
-                                <p>Vue3</p>
-                                <p>Tailwind</p>
-                                <p>Ant-Design</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <span class="projects__subtitle">Web</span>
-                        <h1 class="projects__title">Delipedidos (SAAS)</h1>
-                        <a href="https://delipedidos.com/" class="projects__button" target="_blank">
                             @lang('app.projects-site') <i class="ri-arrow-right-line"></i>
                         </a>
                     </div>
