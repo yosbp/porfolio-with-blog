@@ -27,7 +27,7 @@
                     </li>
 
                     <!-- Blog -->
-<!--                     <li class="nav__item">
+                    <!--                     <li class="nav__item">
                         <a href="{{ route('posts.index') }}" class="nav__link"><i class="ri-newspaper-line"></i>
                             Blog</a>
                     </li> -->
@@ -129,10 +129,28 @@
 
                         <div class="skills__data">
                             <div class="skills__blob">
+                                <img src="{{ Storage::url('img/tailwind.svg') }}">
+                            </div>
+
+                            <h3 class="skills__name">UI Frams</h3>
+                            <span class="skills__subtitle">@lang('app.skills-intermediate')</span>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__blob">
                                 <img src="{{ Storage::url('img\logo-javascript.svg') }}">
                             </div>
 
                             <h3 class="skills__name">JavaScript</h3>
+                            <span class="skills__subtitle">@lang('app.skills-intermediate')</span>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="{{ Storage::url('img/typescript.svg') }}">
+                            </div>
+
+                            <h3 class="skills__name">Typescript</h3>
                             <span class="skills__subtitle">@lang('app.skills-intermediate')</span>
                         </div>
 
@@ -145,22 +163,6 @@
                             <span class="skills__subtitle">@lang('app.skills-intermediate')</span>
                         </div>
 
-                        <div class="skills__data">
-                            <div class="skills__blob">
-                                <img src="{{ Storage::url('img/git-icon.svg') }}">
-                            </div>
-
-                            <h3 class="skills__name">Git</h3>
-                            <span class="skills__subtitle">@lang('app.skills-intermediate')</span>
-                        </div>
-                        <div class="skills__data">
-                            <div class="skills__blob">
-                                <img src="{{ Storage::url('img/tailwind.svg') }}">
-                            </div>
-
-                            <h3 class="skills__name">UI Frams</h3>
-                            <span class="skills__subtitle">@lang('app.skills-intermediate')</span>
-                        </div>
                     </div>
                 </div>
 
