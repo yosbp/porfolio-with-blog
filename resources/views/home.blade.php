@@ -111,19 +111,19 @@
                     <div class="skills__info">
                         <div class="skills__data">
                             <div class="skills__blob">
-                                <img src="{{ Storage::url('img\html-1.svg') }}">
+                                <img src="{{ Storage::url('img/vue.svg') }}">
                             </div>
 
-                            <h3 class="skills__name">HTML</h3>
+                            <h3 class="skills__name">Vue</h3>
                             <span class="skills__subtitle">@lang('app.skills-intermediate')</span>
                         </div>
 
                         <div class="skills__data">
                             <div class="skills__blob">
-                                <img src="{{ Storage::url('img\css-3.svg') }}">
+                                <img src="{{ Storage::url('img/nuxtjs.svg') }}">
                             </div>
 
-                            <h3 class="skills__name">CSS</h3>
+                            <h3 class="skills__name">NuxtJs</h3>
                             <span class="skills__subtitle">@lang('app.skills-intermediate')</span>
                         </div>
 
@@ -138,15 +138,6 @@
 
                         <div class="skills__data">
                             <div class="skills__blob">
-                                <img src="{{ Storage::url('img\logo-javascript.svg') }}">
-                            </div>
-
-                            <h3 class="skills__name">JavaScript</h3>
-                            <span class="skills__subtitle">@lang('app.skills-intermediate')</span>
-                        </div>
-
-                        <div class="skills__data">
-                            <div class="skills__blob">
                                 <img src="{{ Storage::url('img/typescript.svg') }}">
                             </div>
 
@@ -156,13 +147,12 @@
 
                         <div class="skills__data">
                             <div class="skills__blob">
-                                <img src="{{ Storage::url('img/vue.svg') }}">
+                                <img src="{{ Storage::url('img\logo-javascript.svg') }}">
                             </div>
 
-                            <h3 class="skills__name">Vue</h3>
+                            <h3 class="skills__name">JavaScript</h3>
                             <span class="skills__subtitle">@lang('app.skills-intermediate')</span>
                         </div>
-
                     </div>
                 </div>
 
@@ -173,6 +163,16 @@
                     </h3>
 
                     <div class="skills__info">
+
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="{{ Storage::url('img/laravel.svg') }}">
+                            </div>
+
+                            <h3 class="skills__name">Laravel</h3>
+                            <span class="skills__subtitle">@lang('app.skills-intermediate')</span>
+                        </div>
+
                         <div class="skills__data">
                             <div class="skills__blob">
                                 <img src="{{ Storage::url('img/php.svg') }}">
@@ -193,19 +193,19 @@
 
                         <div class="skills__data">
                             <div class="skills__blob">
-                                <img src="{{ Storage::url('img/api.svg') }}">
+                                <img src="{{ Storage::url('img/aws.svg') }}">
                             </div>
 
-                            <h3 class="skills__name">Api Rest</h3>
+                            <h3 class="skills__name">AWS</h3>
                             <span class="skills__subtitle">@lang('app.skills-intermediate')</span>
                         </div>
 
                         <div class="skills__data">
                             <div class="skills__blob">
-                                <img src="{{ Storage::url('img/laravel.svg') }}">
+                                <img src="{{ Storage::url('img/api.svg') }}">
                             </div>
 
-                            <h3 class="skills__name">Laravel</h3>
+                            <h3 class="skills__name">Api Rest</h3>
                             <span class="skills__subtitle">@lang('app.skills-intermediate')</span>
                         </div>
 
