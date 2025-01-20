@@ -5,23 +5,18 @@
     "isEntry": true
   },
   "resources/css/style.css": {
-    "file": "assets/style-c23b8ee2.css",
+    "file": "assets/style-26471496.css",
     "src": "resources/css/style.css",
     "isEntry": true
   },
   "resources/css/app.css": {
-    "file": "assets/app-b0af27d6.css",
+    "file": "assets/app-30e19839.css",
     "src": "resources/css/app.css",
     "isEntry": true
   },
   "resources/js/main.js": {
-    "file": "assets/main-0f09db1f.js",
+    "file": "assets/main-3289dd51.js",
     "src": "resources/js/main.js",
-    "isEntry": true
-  },
-  "resources/js/flickity.min.js": {
-    "file": "assets/flickity.min-71a47a18.js",
-    "src": "resources/js/flickity.min.js",
     "isEntry": true
   },
   "resources/js/app.js": {

@@ -209,6 +209,15 @@
                             <span class="skills__subtitle">@lang('app.skills-intermediate')</span>
                         </div>
 
+                        <div class="skills__data">
+                            <div class="skills__blob">
+                                <img src="{{ Storage::url('img/postgresql.svg') }}">
+                            </div>
+
+                            <h3 class="skills__name">PostgreSQL</h3>
+                            <span class="skills__subtitle">@lang('app.skills-intermediate')</span>
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -225,27 +234,52 @@
         <div class="container section__border">
             <div class="projects__container carousel" data-flickity>
 
-                <!--==================== PROYECTO 1 ====================-->
+                <!--==================== CaracasCity ====================-->
                 <div class="projects__content carousel-cell">
                     <div class="projects__card">
                         <div class="projects__card-inner">
                             <div class="projects__card-front">
-                                <img src="{{ Storage::url('img/proyecto4.JPG') }}" class="">
+                                <img src="{{ Storage::url('img/caracascity.webp') }}" class="">
                             </div>
                             <div class="projects__card-back">
                                 <p class="projects__card-title">@lang('app.projects-techs')</p>
-                                <p>Api - Laravel</p>
-                                <p>Vue3</p>
+                                <p>Nuxt</p>
                                 <p>Tailwind CSS</p>
-                                <p>Ant-Design</p>
-                                <p>AWS</p>
+                                <p>Supabase</p>
+                                <p>Cloudflare</p>
                             </div>
                         </div>
                     </div>
                     <div>
                         <span class="projects__subtitle">Web</span>
-                        <h1 class="projects__title">Delipedidos (SAAS)</h1>
-                        <a href="https://delipedidos.com/" class="projects__button" target="_blank">
+                        <h1 class="projects__title">CaracasCity</h1>
+                        <a href="https://caracascity.com/" class="projects__button" target="_blank">
+                            @lang('app.projects-site') <i class="ri-arrow-right-line"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Automatización CaracasCity -->
+
+                <div class="projects__content carousel-cell">
+                    <div class="projects__card">
+                        <div class="projects__card-inner">
+                            <div class="projects__card-front">
+                                <img src="{{ Storage::url('img/automation-caracascity.webp') }}" class="">
+                            </div>
+                            <div class="projects__card-back">
+                                <p class="projects__card-title">@lang('app.projects-techs')</p>
+                                <p>Laravel</p>
+                                <p>@lang('app.projects-image-manipulation')</p>
+                                <p>CSS</p>
+                                <p>JavaScript</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <span class="projects__subtitle">@lang('app.projects-automation')</span>
+                        <h1 class="projects__title">@lang('app.projects-automatic-daily-posts')</h1>
+                        <a href="https://www.instagram.com/caracascityve/" class="projects__button" target="_blank">
                             @lang('app.projects-site') <i class="ri-arrow-right-line"></i>
                         </a>
                     </div>
@@ -276,31 +310,28 @@
                     </div>
                 </div>
 
-                <!--==================== PROYECTO 3 ====================-->
+                <!--==================== Plantilla de Factura ====================-->
                 <div class="projects__content carousel-cell">
                     <div class="projects__card">
                         <div class="projects__card-inner">
                             <div class="projects__card-front">
-                                <img src="{{ Storage::url('img/proyecto1.JPG') }}" class="">
+                                <img src="{{ Storage::url('img/plantilladefactura.webp') }}" class="">
                             </div>
                             <div class="projects__card-back">
                                 <p class="projects__card-title">@lang('app.projects-techs')</p>
-                                <p>PHP Vanilla</p>
-                                <p>HTML</p>
-                                <p>CSS</p>
-                                <p>JavaScript</p>
+                                <p>Wordpress</p>
+                                <p>Elementor</p>
                             </div>
                         </div>
                     </div>
                     <div>
                         <span class="projects__subtitle">Web</span>
-                        <h1 class="projects__title">@lang('app.projects-realstate')</h1>
-                        <a href="https://inmobiliaria.yosmarb.com/" class="projects__button" target="_blank">
+                        <h1 class="projects__title">Plantilla de Factura</h1>
+                        <a href="https://plantilladefactura.com/" class="projects__button" target="_blank">
                             @lang('app.projects-site') <i class="ri-arrow-right-line"></i>
                         </a>
                     </div>
                 </div>
-
             </div>
     </section>
 
@@ -391,6 +422,4 @@
             </ul>
         </div>
     </footer>
-
-
 </x-home-layout>
